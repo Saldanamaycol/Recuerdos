@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Jardín de Jhoselyn 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="garden-container">
+        <!-- Fondo decorativo -->
+        <div class="sky">
+            <div class="clouds"></div>
+        </div>
+        
+        <div class="garden">
+            <div class="header">
+                <div class="butterfly">🦋</div>
+                <h1 class="title">🌷 Jardín de Jhoselyn 🌷</h1>
+                <p class="subtitle">Cada flor guarda un recuerdo especial</p>
+                <div class="butterfly right">🦋</div>
+            </div>
+            
+            <div class="flowers-grid" id="flowersGrid">
+                <!-- Flor 1 -->
+                <div class="flower-card" data-photo="IMG-20260320-WA0238.jpg" data-message="Esa mirada tuya ilumina mi mundo entero ✨">
+                    <div class="flower-icon">🌻</div>
+                    <div class="flower-name">Girasol</div>
+                    <div class="flower-preview">🌸</div>
+                </div>
+                
+                <!-- Flor 2 -->
+                <div class="flower-card" data-photo="IMG_20260320_173349.jpg" data-message="Tu sonrisa es mi lugar favorito en el mundo 💖">
+                    <div class="flower-icon">🌷</div>
+                    <div class="flower-name">Tulipán</div>
+                    <div class="flower-preview">🌸</div>
+                </div>
+                
+                <!-- Flor 3 -->
+                <div class="flower-card" data-photo="IMG_20260320_171703.jpg" data-message="Eres tan hermosa como una rosa al amanecer 🌹">
+                    <div class="flower-icon">🌹</div>
+                    <div class="flower-name">Rosa</div>
+                    <div class="flower-preview">🌸</div>
+                </div>
+                
+                <!-- Flor 4 -->
+                <div class="flower-card" data-photo="IMG_20260320_141815.jpg" data-message="Tu esencia es única, como una flor en primavera 💕">
+                    <div class="flower-icon">🌸</div>
+                    <div class="flower-name">Cerezo</div>
+                    <div class="flower-preview">🌸</div>
+                </div>
+            </div>
+            
+            <!-- Modal para mostrar la foto -->
+            <div class="modal" id="photoModal">
+                <div class="modal-content">
+                    <span class="close-modal" id="closeModal">&times;</span>
+                    <div class="modal-photo-container">
+                        <img id="modalPhoto" src="" alt="Foto de Jhoselyn">
+                    </div>
+                    <p id="modalMessage" class="modal-message"></p>
+                    <div class="modal-hearts">💖 💕 💗 💓 💝</div>
+                </div>
+            </div>
+            
+            <div class="message-of-day" id="messageOfDay">
+                <div class="message-icon">💌</div>
+                <p id="dailyMessage">Toca una flor para ver tu recuerdo especial...</p>
+            </div>
+            
+            <button class="surprise-btn" id="surpriseBtn">
+                <span>✨</span> Sorpresa Especial <span>✨</span>
+            </button>
+        </div>
+        
+        <!-- Pétalos flotantes -->
+        <div class="floating-petals" id="petals"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
